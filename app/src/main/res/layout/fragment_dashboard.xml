@@ -19,6 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="What would you"
+            android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="30dp"/>
 
@@ -28,6 +29,7 @@
             android:layout_height="wrap_content"
             android:text="like to eat?"
             android:textStyle="bold"
+            android:textColor="@color/black"
             android:textSize="30dp"
             android:layout_below="@+id/header1"/>
 
@@ -71,6 +73,7 @@
             android:layout_height="wrap_content"
             android:text="Recommend"
             android:layout_below="@+id/cw1"
+            android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="20dp" />
 
@@ -282,6 +285,7 @@
             android:text="Nutritinal facts"
             android:layout_below="@+id/scroll2"
             android:textStyle="bold"
+            android:textColor="@color/black"
             android:layout_marginTop="10dp"
             android:textSize="20dp" />
 

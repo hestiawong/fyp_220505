@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:fillViewport="false">
+    >
 
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -10,43 +10,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="false"
     tools:context=".ui.home.HomeFragment">
 
     <ImageView
         android:id="@+id/banner"
         android:layout_width="match_parent"
-        android:layout_height="240dp"
+        android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:adjustViewBounds="true"
-        android:src="@drawable/banner1" />
+        android:src="@drawable/tutorial_bg" />
 
     <TextView
         android:id="@+id/text_tutor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tutorial"
-        android:layout_marginTop="150dp"
-        android:layout_marginLeft="20dp"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="40dp"
         android:textStyle="bold"
         android:textSize="30dp"/>
 
-    <TextView
-        android:id="@+id/text1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:layout_marginLeft="20dp"
-        android:text="Good technique is key for effective training.
-Pick a tutorial to learn and maintain the
-proper technique."
-        android:layout_below="@+id/text_tutor" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
-        android:layout_below="@+id/banner">
+        android:layout_marginTop="20dp"
+        android:background="@drawable/upper_round_bg"
+        android:layout_below="@+id/text_tutor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp">
     <TextView
         android:id="@+id/text_recom"
         android:layout_width="wrap_content"
@@ -131,6 +128,7 @@ proper technique."
         android:layout_height="wrap_content"
         android:text="By body part"
         android:textStyle="bold"
+        android:textColor="@color/black"
         android:textSize="20dp"
         android:layout_marginTop="20dp"
         android:layout_below="@+id/recom2"/>
@@ -238,7 +236,7 @@ proper technique."
         </LinearLayout>
     </HorizontalScrollView>
     </RelativeLayout>
-
+    </RelativeLayout>
 
 </RelativeLayout>
 

@@ -4,29 +4,37 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/recyclerview_layout_nutrient">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp" >
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginBottom="30dp"
+        android:layout_height="30dp"
         app:cardCornerRadius="20dp"
         app:cardElevation="0dp"
-        app:cardBackgroundColor="#e8e7fe">
+        app:cardBackgroundColor="#ffffff">
 
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="9dp"
             android:layout_marginRight="10dp"
-            android:stretchColumns="1">
+            android:stretchColumns="*">
 
-            <TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
                 <TextView
                     android:id="@+id/foodNutrientName"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:ellipsize="none"
                     android:maxLines="2"
+                    android:textAlignment="center"
                     android:scrollHorizontally="false"
                     android:singleLine="false"
                     android:text="Name"/>
@@ -40,4 +48,12 @@
             </TableRow>
         </TableLayout>
     </androidx.cardview.widget.CardView>
+    <View
+        android:layout_below="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="#eeebe9" />
+    </RelativeLayout>
 </RelativeLayout>

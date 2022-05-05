@@ -31,7 +31,7 @@ public class FoodNutrient extends AppCompatActivity {
 
     private String Nutrition = "Vitamin A";
     private String NutritionDescri = " Vitamins are organic compounds that\n peopleneed in small quantities.\n Most vitamins need to come from food.";
-    private String url = "https://api.spoonacular.com/recipes/findByNutrients?minVitaminA=10&number=10&random=true&apiKey=7ed522da19374c0f8aba43afd5c3aaba";
+    private String url = "https://api.spoonacular.com/recipes/findByNutrients?minVitaminA=10&number=10&random=true&apiKey=36e34d5dffd4425aa00f5b43c817935d";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

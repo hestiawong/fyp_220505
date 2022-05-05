@@ -28,7 +28,7 @@ public class EntryChoiceActivity extends AppCompatActivity {
         actionBar.hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_entry_choice);
-        button = findViewById(R.id.java_entry_point);
+        /*button = findViewById(R.id.java_entry_point);
 
 
 
@@ -38,7 +38,7 @@ public class EntryChoiceActivity extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), LivePreviewActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
     }
 
     @Override
